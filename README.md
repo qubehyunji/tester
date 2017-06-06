@@ -3,7 +3,6 @@
 cp .env.sh.template .env.sh  
 modify and supply the environment variables  
 
-
 3. if you want to just run the container  
 follow login instructions at https://github.com/Qubeship/qube_base_python/blob/master/login-instructions.md and proceed to step 5.  
 
