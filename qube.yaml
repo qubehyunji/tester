@@ -1,0 +1,32 @@
+id: b6db2a34-8d48-492a-a5c0-0d6c0f02b838
+version: v2
+name: python-tester
+apptype: api
+language: python
+containerName: python-tester
+toolchain:
+  id: 58e3fad09a148400216611cc
+  name: Qubeship-Python-Toolchain
+opinion:
+  id: 58e5596a13d0cc000e88a95d
+  name: Qubeship basic opinion
+endpoint:
+  id: 5966a3c6d8192b000b8377eb
+  name: alpha-cluster
+  type: target
+variables:
+  - name: APP_VERSION
+    value: v0.1
+build:
+  compile:
+    publish:
+     - dist/
+bake:
+  skip: false
+test:
+  skip: true
+deploy_to_qa:
+  skip: true
+deploy_to_prod:
+  skip: false
+
